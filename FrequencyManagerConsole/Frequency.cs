@@ -8,40 +8,52 @@ namespace FrequencyManager
     {
         public int Id { get; set; }
         public string Name { get; set; }
+        public string Category { get; set; }
         public double RxFreq { get; set; }
         public double TxFreq { get; set; }
-        public double Bandwidth { get; set; }
-        public string Category { get; set; }
         public string Location { get; set; }
-        public string AnaMode { get; set; }
-        public double AnaSqCode { get; set; }
-        public bool AnaEnc { get; set; }
+        public int SigStr { get; set; }
+        //-----Digital Modes-----//
+        public bool IsDigi { get; set; }
         public string DigiMode { get; set; }
-        public int DigiCC { get; set; }
-        public int DigiTS { get; set; }
-        public int DigiTG { get; set; }
-        public bool DigiEncEP { get; set; }
-        public bool DigiEncBP { get; set; }
+        //-----DMR Mototrbo-----//
+        public int DigiDmrCc { get; set; }
+        public int DigiDmrTs { get; set; }
+        public int DigiDmrTgId { get; set; }
+        public string DigiDmrTgName { get; set; }
+        public string DigiDmrEncType { get; set; }
+        //-----Tetra-----//
+        public double DigiTetraMcch { get; set; }
+        public int DigiTetraTgID { get; set; }
+        public string DigiTetraTgName { get; set; }
+        //-----Analog-----//
+        public string AnaMode { get; set; }
+        public string AnaSqType { get; set; }
+        public double AnaCtcssCode { get; set; }
+        public int AnaDcsCode { get; set; }
+        public double Bandwidth { get; set; }
+        public bool AnaEnc { get; set; }
 
         public static Frequency CreateFrequency(int id, string name)
         {
             var frequency = new Frequency();
-            frequency.Id = id;
-            frequency.Name = name;
-            frequency.RxFreq = 145.000000;
-            frequency.TxFreq = 145.000000;
-            frequency.Bandwidth = 12.5;
-            frequency.Category = "Unallocated";
-            frequency.Location = "Not Set";
-            frequency.AnaMode = "Not Set";
-            frequency.AnaSqCode = 67.0;
-            frequency.AnaEnc = false;
-            frequency.DigiMode = "Not Set";
-            frequency.DigiCC = 0;
-            frequency.DigiTS = 1;
-            frequency.DigiTG = 1;
-            frequency.DigiEncEP = false;
-            frequency.DigiEncBP = false;
+
+            //frequency.Id = id;
+            //frequency.Name = name;
+            //frequency.Category = "Unallocated";
+            //frequency.RxFreq = 145.000000;
+            //frequency.TxFreq = 145.000000;
+            //frequency.Bandwidth = 12.5;
+            //frequency.Location = "Not Set";
+            //frequency.AnaMode = "Not Set";
+            //frequency.AnaSqCode = 67.0;
+            //frequency.AnaEnc = false;
+            //frequency.DigiMode = "Not Set";
+            //frequency.DigiCC = 0;
+            //frequency.DigiTS = 1;
+            //frequency.DigiTG = 1;
+            //frequency.DigiEncEP = false;
+            //frequency.DigiEncBP = false;
 
             return frequency;
         }
@@ -49,6 +61,12 @@ namespace FrequencyManager
         public Frequency SetName(string name)
         {
             Name = name;
+
+            return this;
+        }
+        public Frequency SetCategory(string category)
+        {
+            Category = category;
 
             return this;
         }
@@ -66,14 +84,7 @@ namespace FrequencyManager
 
             return this;
         }
-
-        public Frequency SetCategory(string category)
-        {
-            Category = category;
-
-            return this;
-        }
-
+        
         public Frequency SetLocation(string location)
         {
             Location = location;
@@ -81,23 +92,16 @@ namespace FrequencyManager
             return this;
         }
 
-        public Frequency SetAnaMode(string anamode)
+        public Frequency SetSignalStrength(int sigstrength)
         {
-            AnaMode = anamode;
+            SigStr = sigstrength;
 
             return this;
         }
 
-        public Frequency SetAnaSqCode(double anasqcode)
+        public Frequency SetIsDigi(bool isdigi)
         {
-            AnaSqCode = anasqcode;
-
-            return this;
-        }
-
-        public Frequency SetAnaEnc(bool anaenc)
-        {
-            AnaEnc = anaenc;
+            IsDigi = isdigi;
 
             return this;
         }
@@ -109,39 +113,102 @@ namespace FrequencyManager
             return this;
         }
 
-        public Frequency SetDigiCC(int digicc)
+        public Frequency SetDigiDmrCc(int digidmrcc)
         {
-            DigiCC = digicc;
+            DigiDmrCc = digidmrcc;
 
             return this;
         }
 
-        public Frequency SetDigiTS(int digits)
+        public Frequency SetDigiDmrTs(int digidmrts)
         {
-            DigiTS = digits;
+            DigiDmrTs = digidmrts;
 
             return this;
         }
 
-        public Frequency SetDigiTG(int digitg)
+        public Frequency SetDigiDmrTgId(int digidmrtgid)
         {
-            DigiTG = digitg;
+            DigiDmrTgId = digidmrtgid;
 
             return this;
         }
 
-        public Frequency SetDigiEncEP(bool digiencep)
+        public Frequency SetDigiDmrTgName(string digidmrtgname)
         {
-           DigiEncEP = digiencep;
+            DigiDmrTgName = digidmrtgname;
+
+            return this;
+        }
+
+        public Frequency SetDigiDmrEncType(string digidmrenctype)
+        {
+           DigiDmrEncType = digidmrenctype;
 
            return this;
         }
 
-        public Frequency SetDigiEncBP(bool digiencbp)
+        public Frequency SetDigiTetraMcch(double digitetramcch)
         {
-           DigiEncBP = digiencbp;
+            DigiTetraMcch = digitetramcch;
 
-           return this;
+            return this;
+        }
+
+        public Frequency SetDigiTetraTgId(int digitetratgid)
+        {
+            DigiTetraTgID = digitetratgid;
+
+            return this;
+        }
+
+        public Frequency SetDigiTetraTgName(string digitetratgname)
+        {
+            DigiTetraTgName = digitetratgname;
+
+            return this;
+        }
+
+        public Frequency SetAnaMode(string anamode)
+        {
+            AnaMode = anamode;
+
+            return this;
+        }
+
+        public Frequency SetAnaSqType(string anasqtype)
+        {
+            AnaSqType = anasqtype;
+
+            return this;
+        }
+
+        public Frequency SetAnaCtcssCode(double anactcsscode)
+        {
+            AnaCtcssCode = anactcsscode;
+
+            return this;
+        }
+
+        public Frequency SetAnaDcsCode(int anadcscode)
+        {
+            AnaDcsCode = anadcscode;
+
+            return this;
+        }
+
+        public Frequency SetBandwidth(int bandwidth)
+        {
+            Bandwidth = bandwidth;
+
+            return this;
+        }
+
+        public Frequency SetAnaEnc(bool anaenc)
+        {
+            AnaEnc = anaenc;
+
+            return this;
         }
     }
 }

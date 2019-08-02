@@ -9,3 +9,9 @@ C:\Users\gpaull\Source\FrequencyManagerConsole\FrequencyManagerConsole\obj\Debug
 C:\Users\gpaull\Source\FrequencyManagerConsole\FrequencyManagerConsole\obj\Debug\netcoreapp2.2\FrequencyManagerConsole.AssemblyInfo.cs
 C:\Users\gpaull\Source\FrequencyManagerConsole\FrequencyManagerConsole\obj\Debug\netcoreapp2.2\FrequencyManagerConsole.dll
 C:\Users\gpaull\Source\FrequencyManagerConsole\FrequencyManagerConsole\obj\Debug\netcoreapp2.2\FrequencyManagerConsole.pdb
+C:\Users\graha\source\FrequencyManager\FrequencyManagerConsole\obj\Debug\netcoreapp2.2\FrequencyManagerConsole.csprojAssemblyReference.cache
+C:\Users\graha\source\FrequencyManager\FrequencyManagerConsole\obj\Debug\netcoreapp2.2\FrequencyManagerConsole.csproj.CoreCompileInputs.cache
+C:\Users\graha\source\FrequencyManager\FrequencyManagerConsole\obj\Debug\netcoreapp2.2\FrequencyManagerConsole.AssemblyInfoInputs.cache
+C:\Users\graha\source\FrequencyManager\FrequencyManagerConsole\obj\Debug\netcoreapp2.2\FrequencyManagerConsole.AssemblyInfo.cs
+C:\Users\graha\source\FrequencyManager\FrequencyManagerConsole\obj\Debug\netcoreapp2.2\FrequencyManagerConsole.dll
+C:\Users\graha\source\FrequencyManager\FrequencyManagerConsole\obj\Debug\netcoreapp2.2\FrequencyManagerConsole.pdb

@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gpaull\\Source\\FrequencyManagerConsole\\FrequencyManagerConsole\\FrequencyManagerConsole.csproj": {}
+    "C:\\Users\\graha\\source\\FrequencyManager\\FrequencyManagerConsole\\FrequencyManagerConsole.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gpaull\\Source\\FrequencyManagerConsole\\FrequencyManagerConsole\\FrequencyManagerConsole.csproj": {
+    "C:\\Users\\graha\\source\\FrequencyManager\\FrequencyManagerConsole\\FrequencyManagerConsole.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gpaull\\Source\\FrequencyManagerConsole\\FrequencyManagerConsole\\FrequencyManagerConsole.csproj",
+        "projectUniqueName": "C:\\Users\\graha\\source\\FrequencyManager\\FrequencyManagerConsole\\FrequencyManagerConsole.csproj",
         "projectName": "FrequencyManagerConsole",
-        "projectPath": "C:\\Users\\gpaull\\Source\\FrequencyManagerConsole\\FrequencyManagerConsole\\FrequencyManagerConsole.csproj",
-        "packagesPath": "C:\\Users\\gpaull\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gpaull\\Source\\FrequencyManagerConsole\\FrequencyManagerConsole\\obj\\",
+        "projectPath": "C:\\Users\\graha\\source\\FrequencyManager\\FrequencyManagerConsole\\FrequencyManagerConsole.csproj",
+        "packagesPath": "C:\\Users\\graha\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\graha\\source\\FrequencyManager\\FrequencyManagerConsole\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\gpaull\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\graha\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
