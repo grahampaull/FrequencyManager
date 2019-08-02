@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace FrequencyManagerConsole
+namespace FrequencyManager
 {
     public class Frequency
     {
@@ -130,18 +130,18 @@ namespace FrequencyManagerConsole
             return this;
         }
 
-        //public Frequency SetDigiEncEP(bool digiencep)
-        //{
-        //    DigiTG = digiencep;
+        public Frequency SetDigiEncEP(bool digiencep)
+        {
+           DigiEncEP = digiencep;
 
-        //    return this;
-        //}
+           return this;
+        }
 
-        //public Frequency SetDigiEncEP(bool digiencbp)
-        //{
-        //    DigiTG = digiencbp;
+        public Frequency SetDigiEncBP(bool digiencbp)
+        {
+           DigiEncBP = digiencbp;
 
-        //    return this;
-        //}
+           return this;
+        }
     }
 }

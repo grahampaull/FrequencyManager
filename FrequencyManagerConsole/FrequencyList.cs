@@ -4,7 +4,7 @@ using System.Text;
 using static System.IO.File;
 using Newtonsoft.Json;
 
-namespace FrequencyManagerConsole
+namespace FrequencyManager
 {
     public class FrequencyList
     {
