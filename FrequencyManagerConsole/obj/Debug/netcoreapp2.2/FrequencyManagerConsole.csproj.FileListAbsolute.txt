@@ -1,0 +1,11 @@
+C:\Users\gpaull\Source\FrequencyManagerConsole\FrequencyManagerConsole\bin\Debug\netcoreapp2.2\FrequencyManagerConsole.deps.json
+C:\Users\gpaull\Source\FrequencyManagerConsole\FrequencyManagerConsole\bin\Debug\netcoreapp2.2\FrequencyManagerConsole.runtimeconfig.json
+C:\Users\gpaull\Source\FrequencyManagerConsole\FrequencyManagerConsole\bin\Debug\netcoreapp2.2\FrequencyManagerConsole.runtimeconfig.dev.json
+C:\Users\gpaull\Source\FrequencyManagerConsole\FrequencyManagerConsole\bin\Debug\netcoreapp2.2\FrequencyManagerConsole.dll
+C:\Users\gpaull\Source\FrequencyManagerConsole\FrequencyManagerConsole\bin\Debug\netcoreapp2.2\FrequencyManagerConsole.pdb
+C:\Users\gpaull\Source\FrequencyManagerConsole\FrequencyManagerConsole\obj\Debug\netcoreapp2.2\FrequencyManagerConsole.csprojAssemblyReference.cache
+C:\Users\gpaull\Source\FrequencyManagerConsole\FrequencyManagerConsole\obj\Debug\netcoreapp2.2\FrequencyManagerConsole.csproj.CoreCompileInputs.cache
+C:\Users\gpaull\Source\FrequencyManagerConsole\FrequencyManagerConsole\obj\Debug\netcoreapp2.2\FrequencyManagerConsole.AssemblyInfoInputs.cache
+C:\Users\gpaull\Source\FrequencyManagerConsole\FrequencyManagerConsole\obj\Debug\netcoreapp2.2\FrequencyManagerConsole.AssemblyInfo.cs
+C:\Users\gpaull\Source\FrequencyManagerConsole\FrequencyManagerConsole\obj\Debug\netcoreapp2.2\FrequencyManagerConsole.dll
+C:\Users\gpaull\Source\FrequencyManagerConsole\FrequencyManagerConsole\obj\Debug\netcoreapp2.2\FrequencyManagerConsole.pdb
