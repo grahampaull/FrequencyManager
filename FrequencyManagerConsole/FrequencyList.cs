@@ -12,18 +12,23 @@ namespace FrequencyManager
 
         private static List<Frequency> SeedInitialFrequencies()
         {
-            var defaultFreq = Frequency.CreateFrequency(1, "HMCG 0")
-                    .SetRX(156.000000)
-                    .SetTX(155.000000)
-                    .SetCategory("Unallocated")
-                    .SetLocation("Not Set")
-                    .SetAnaMode("Not Set")
-                    .SetAnaSqCode("Not Set")
-                    .SetDigiMode("Not Set")
-                    .SetDigiCC("Not Set")
-                    .SetDigiTS("Not Set")
-                    .SetDigiTG("Not Set");
+            var defaultFreq = Frequency.CreateFrequency(1, "HMCG Channel 0", "Marine", 156.000000, 156.000000, "UK", 5, false, "", 0, 0, 0, "", "", 0, "", "NFM", "", 0, 0, 25, false, "Default Seeded");
+                            
+                            //.SetName("HMCG Channel 0")
+                            //.SetCategory("Marine")
+                            //.SetRX(156.000000)
+                            //.SetTX(156.000000)  
+                            //.SetLocation("United Kingdom")
+                            //.SetSignalStrength(5)
+                            //.SetIsDigi(false)
+                            //.SetDigiMode("Not Digital")
+                            //.SetDigiDmrCc(0)
+                            //.SetDigiDmrTs(0)
+                            //.SetDigiTG("Not Set");
 
+                            //.SetAnaMode("Not Set")
+                            //.SetAnaSqCode("Not Set")
+                                                        
             var listOfFrequencies = new List<Frequency>();
 
             listOfFrequencies.Add(defaultFreq);

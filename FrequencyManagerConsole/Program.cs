@@ -9,30 +9,66 @@ namespace FrequencyManager
     {
         static void Main(string[] args)
         {
-            // var FrequencyList = new FrequencyList();
-            
-            // WriteLine("Would you like to add a new frequency?");
+            var FrequencyList = new FrequencyList();
 
-            // if(ReadLine() == "y")
-            // {
-            //     WriteLine("what should this be called?");
-            //     var name = ReadLine();
+            var frequency = FrequencyList.LoadFrequencies();
 
-            //     WriteLine("What is the RX Frequency?");
-            //     var rxFreq = ReadLine();
+            WriteLine("Would you like to add a new frequency?");
 
-            //     var newFreq = Frequency.CreateFrequency(name.)
+            if (ReadLine() == "y")
+            {
+                WriteLine("Ok, Fill in the details then press enter after each");
 
-            // }
+                WriteLine("STRING - Name");
+                string name = ReadLine();
 
-            // var listFrequencies = new FrequencyList();
+                WriteLine("STRING - What Category?");
+                string category = ReadLine();
 
-            // var freq = listFrequencies.LoadFrequencies();
+                WriteLine("DOUBLE - RX Freq eg: 156.000000");
+                double rxFreq = Convert.ToInt32(ReadLine());
 
-            // foreach (var singleFreq in freq)
-            // {
-            //     WriteLine($"{singleFreq.Name} can be found on {singleFreq.RxFreq:N6}");
-            // }            
+                WriteLine("DOUBLE - TX Freq eg: 156.000000");
+                double txFreq = Convert.ToInt32(ReadLine());
+
+                WriteLine("STRING - Location");
+                string location = ReadLine();
+
+                WriteLine("INT - Signal Strength (0-5)");
+                int sigStrength = Convert.ToInt32(ReadLine());
+
+                //AT THIS POINT I NEED TO SEE IF THE USER WANTS ANALOG OR DIGITAL, i AM SKIPPING THIS FOR NOW AS i AM NOT SURE HOW TO DO THIS
+                WriteLine("AT THIS POINT I NEED TO SEE IF THE USER WANTS ANALOG OR DIGITAL, i AM SKIPPING THIS FOR NOW AS i AM NOT SURE HOW TO DO THIS");
+
+                WriteLine("Analog Mode: WFM, NFM, AM, SSB");
+                string anaMode = ReadLine();
+
+                WriteLine("What Squelch Type? - CTCSS or DCS");
+                string anaSqType = ReadLine();
+
+                WriteLine("CTCSS Tone Code");
+                double anaCtcssCode = Convert.ToInt32(ReadLine());
+
+                WriteLine("DCS Tone Code");
+                int anaDcsCode = Convert.ToInt32(ReadLine());
+
+                WriteLine("Bandwidth - 12.5");
+                double bandwidth = Convert.ToInt32(ReadLine());
+
+                var newFrequency = Frequency.CreateFrequency(frequency.Count() + 1, name, category, rxFreq, txFreq, location, sigStrength, false, "", 0, 0, 0, "", "", 0, "", "NFM", "CTCSS", 67.0, 0, 12.5, false, "This is seeded");
+
+                var FrequencyList.Add(newFrequency);
+
+            }
+
+            var listFrequencies = new FrequencyList();
+
+            var freq = listFrequencies.LoadFrequencies();
+
+            foreach (var singleFreq in freq)
+            {
+                WriteLine($"{singleFreq.Name} can be found on {singleFreq.RxFreq:N6}");
+            }
         }
     }
 }

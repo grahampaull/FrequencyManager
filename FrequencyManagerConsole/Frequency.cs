@@ -23,37 +23,48 @@ namespace FrequencyManager
         public string DigiDmrTgName { get; set; }
         public string DigiDmrEncType { get; set; }
         //-----Tetra-----//
-        public double DigiTetraMcch { get; set; }
-        public int DigiTetraTgID { get; set; }
+        public int DigiTetraTgId { get; set; }
         public string DigiTetraTgName { get; set; }
         //-----Analog-----//
         public string AnaMode { get; set; }
         public string AnaSqType { get; set; }
         public double AnaCtcssCode { get; set; }
         public int AnaDcsCode { get; set; }
-        public double Bandwidth { get; set; }
         public bool AnaEnc { get; set; }
+        public double Bandwidth { get; set; }
+        public string Comments { get; set; }
+        
 
-        public static Frequency CreateFrequency(int id, string name)
+        public static Frequency CreateFrequency(int id, string name, string category, double rxfreq, double txfreq, string location,
+            int sigstr, bool isdigi, string digimode, int digidmrcc, int digidmrts, int digidmrtgid, string digidmrtgname, string digidmrenctype,
+            int digitetratgid, string digitetratgname,
+            string anamode, string anasqtype, double anactcsscode, int anadcscode, double bandwidth, bool anaenc, string comments)
         {
             var frequency = new Frequency();
 
-            //frequency.Id = id;
-            //frequency.Name = name;
-            //frequency.Category = "Unallocated";
-            //frequency.RxFreq = 145.000000;
-            //frequency.TxFreq = 145.000000;
-            //frequency.Bandwidth = 12.5;
-            //frequency.Location = "Not Set";
-            //frequency.AnaMode = "Not Set";
-            //frequency.AnaSqCode = 67.0;
-            //frequency.AnaEnc = false;
-            //frequency.DigiMode = "Not Set";
-            //frequency.DigiCC = 0;
-            //frequency.DigiTS = 1;
-            //frequency.DigiTG = 1;
-            //frequency.DigiEncEP = false;
-            //frequency.DigiEncBP = false;
+            frequency.Id = id;
+            frequency.Name = name;
+            frequency.Category = category;
+            frequency.RxFreq = rxfreq;
+            frequency.TxFreq = txfreq;
+            frequency.Location = location;
+            frequency.SigStr = sigstr;
+            frequency.IsDigi = isdigi;
+            frequency.DigiMode = digimode;
+            frequency.DigiDmrCc = digidmrcc;
+            frequency.DigiDmrTs = digidmrts;
+            frequency.DigiDmrTgId = digidmrtgid;
+            frequency.DigiDmrTgName = digidmrtgname;
+            frequency.DigiDmrEncType = digidmrenctype;
+            frequency.DigiTetraTgId = digitetratgid;
+            frequency.DigiTetraTgName = digitetratgname;
+            frequency.AnaMode = anamode;
+            frequency.AnaSqType = anasqtype;
+            frequency.AnaCtcssCode = anactcsscode;
+            frequency.AnaDcsCode = anadcscode;
+            frequency.AnaEnc = anaenc;
+            frequency.Bandwidth = bandwidth;
+            frequency.Comments = comments;
 
             return frequency;
         }
@@ -147,17 +158,10 @@ namespace FrequencyManager
 
            return this;
         }
-
-        public Frequency SetDigiTetraMcch(double digitetramcch)
-        {
-            DigiTetraMcch = digitetramcch;
-
-            return this;
-        }
-
+                
         public Frequency SetDigiTetraTgId(int digitetratgid)
         {
-            DigiTetraTgID = digitetratgid;
+            DigiTetraTgId = digitetratgid;
 
             return this;
         }
@@ -197,6 +201,15 @@ namespace FrequencyManager
             return this;
         }
 
+       
+
+        public Frequency SetAnaEnc(bool anaenc)
+        {
+            AnaEnc = anaenc;
+
+            return this;
+        }
+
         public Frequency SetBandwidth(int bandwidth)
         {
             Bandwidth = bandwidth;
@@ -204,9 +217,9 @@ namespace FrequencyManager
             return this;
         }
 
-        public Frequency SetAnaEnc(bool anaenc)
+        public Frequency SetComment(string comments)
         {
-            AnaEnc = anaenc;
+            Comments = comments;
 
             return this;
         }
