@@ -35,36 +35,33 @@ namespace FrequencyManager
         public string Comments { get; set; }
         
 
-        public static Frequency CreateFrequency(int id, string name, string category, double rxfreq, double txfreq, string location,
-            int sigstr, bool isdigi, string digimode, int digidmrcc, int digidmrts, int digidmrtgid, string digidmrtgname, string digidmrenctype,
-            int digitetratgid, string digitetratgname,
-            string anamode, string anasqtype, double anactcsscode, int anadcscode, double bandwidth, bool anaenc, string comments)
+        public static Frequency CreateFrequency(int id)
         {
             var frequency = new Frequency();
 
             frequency.Id = id;
-            frequency.Name = name;
-            frequency.Category = category;
-            frequency.RxFreq = rxfreq;
-            frequency.TxFreq = txfreq;
-            frequency.Location = location;
-            frequency.SigStr = sigstr;
-            frequency.IsDigi = isdigi;
-            frequency.DigiMode = digimode;
-            frequency.DigiDmrCc = digidmrcc;
-            frequency.DigiDmrTs = digidmrts;
-            frequency.DigiDmrTgId = digidmrtgid;
-            frequency.DigiDmrTgName = digidmrtgname;
-            frequency.DigiDmrEncType = digidmrenctype;
-            frequency.DigiTetraTgId = digitetratgid;
-            frequency.DigiTetraTgName = digitetratgname;
-            frequency.AnaMode = anamode;
-            frequency.AnaSqType = anasqtype;
-            frequency.AnaCtcssCode = anactcsscode;
-            frequency.AnaDcsCode = anadcscode;
-            frequency.AnaEnc = anaenc;
-            frequency.Bandwidth = bandwidth;
-            frequency.Comments = comments;
+            frequency.Name = "HMCG 0";
+            frequency.Category = "Marine";
+            frequency.RxFreq = 156.000000;
+            frequency.TxFreq = 156.000000;
+            frequency.Location = "United Kingdom";
+            frequency.SigStr = 0;
+            frequency.IsDigi = false;
+            frequency.DigiMode = "N/A";
+            frequency.DigiDmrCc = 0;
+            frequency.DigiDmrTs = 0;
+            frequency.DigiDmrTgId = 0;
+            frequency.DigiDmrTgName = "N/A";
+            frequency.DigiDmrEncType = "N/A";
+            frequency.DigiTetraTgId = 0;
+            frequency.DigiTetraTgName = "N/A";
+            frequency.AnaMode = "NFM";
+            frequency.AnaSqType = "None";
+            frequency.AnaCtcssCode = 0;
+            frequency.AnaDcsCode = 0;
+            frequency.AnaEnc = false;
+            frequency.Bandwidth = 12.5;
+            frequency.Comments = "HM Coastguard Channel 0";
 
             return frequency;
         }
@@ -210,7 +207,7 @@ namespace FrequencyManager
             return this;
         }
 
-        public Frequency SetBandwidth(int bandwidth)
+        public Frequency SetBandwidth(double bandwidth)
         {
             Bandwidth = bandwidth;
 
